@@ -22,7 +22,12 @@ RUN pip install influxdb
 RUN pip install msgpack
 RUN pip install pyowm
 
-CMD ["/usr/bin/python", "/tmp/SmartX-MicroBox/application_functionality/Smart-Energy-service/IoT-Cloud-Hub_functions/API_server/flask_api_server_ver2.py"]
+RUN python -m pip install --upgrade pip setuptools wheel
+RUN pip install Adafruit_DHT
+
+
+
+CMD ["/usr/bin/python", "/tmp/SmartX-MicroBox/application_functionality/Smart-Energy-service/Device_functions/TempHumsend3.py"]
 
 
 
