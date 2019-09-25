@@ -1,5 +1,5 @@
 #!/bin/bash
-key="fn!xo!ska!"
+key=""
 sudo sshpass -p $key ssh-copy-id -o StrictHostKeyChecking=no tein@103.22.221.85
 sudo sshpass -p $key ssh-copy-id -o StrictHostKeyChecking=no tein@103.22.221.83
 sudo sshpass -p $key ssh-copy-id -o StrictHostKeyChecking=no tein@203.80.21.11
