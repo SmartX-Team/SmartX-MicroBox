@@ -1,0 +1,32 @@
+# Edit this file to introduce tasks to be run by cron.
+#
+# Each task to run has to be defined through a single line
+# indicating with different fields when the task will be run
+# and what command to run for the task
+#
+# To define the time you can provide concrete values for
+# minute (m), hour (h), day of month (dom), month (mon),
+# and day of week (dow) or use '*' in these fields (for 'any').#
+# Notice that tasks will be started based on the cron's system
+# daemon's notion of time and timezones.
+#
+# Output of the crontab jobs (including errors) is sent through
+# email to the user the crontab file belongs to (unless redirected).
+#
+# For example, you can run a backup of all your user accounts
+# at 5 a.m every week with:
+# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+#
+# For more information see the manual pages of crontab(5) and cron(8)
+#
+# m h  dom mon dow   command
+@reboot /usr/bin/screen -dmS Micro-Box_measurement sudo java -jar /home/netcs/active_monitoring/tests/microbox_measurement.jar  > /home/netcs/measurementjar_cron.log 2>&1
+@reboot /usr/bin/screen -dmS collectd sudo java -jar /home/netcs/active_monitoring/tests/collectd_all.jar  > /home/netcs/collectdjar_cron.log 2>&1
+@reboot /usr/bin/screen -dmS typeB_measurement sudo java -jar /home/netcs/active_monitoring/tests/typeB_measurement.jar  > /home/netcs/typeB_measurement_cron.log 2>&1
+@reboot /usr/bin/screen -dmS center_agent sudo python /home/netcs/active_monitoring/agent/center_agent.py > /home/netcs/center_agent.log 2>&1
+@reboot /usr/bin/screen -dmS Agents_DatatoDB sudo java -jar /home/netcs/active_monitoring/agent/agentStatus.jar > /home/netcs/Agents_DatatoDB.log 2>&1
+
+05 1 * * * /bin/bash /home/netcs/active_monitoring/mail_microbox.sh
+05 1 * * * /bin/bash /home/netcs/active_monitoring/mail_typeB.sh
+30 6 * * * /bin/bash /home/netcs/active_monitoring/mail4.sh
+
