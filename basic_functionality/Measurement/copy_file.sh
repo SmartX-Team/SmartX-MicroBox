@@ -1,6 +1,6 @@
 #!/bin/bash
 input="ips1.txt"
-PASS="fn!xo!ska!"
+PASS=""
 echo $1
 if [ "$1" != "copy" ]; then
  if [ "$1" !="move" ]; then
