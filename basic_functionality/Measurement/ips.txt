@@ -1,0 +1,15 @@
+
+  smartx-microbox-gist-2=103.22.221.83
+  smartx-microbox-um-1=203.80.21.11
+  smartx-microbox-um-2=203.80.21.12
+  smartx-microbox-chula-1=161.200.90.118
+  smartx-microbox-itc-1=103.142.5.3
+  smartx-microbox-nuol-1=180.131.148.98
+  smartx-microbox-rub-1=220.158.236.43
+  smartx-microbox-vnu-1=112.137.141.13
+  smartx-microbox-ucsy-1=103.137.86.2
+  smartx-microbox-ucsm-1=103.47.184.186
+  smartx-microbox-itb-1=167.205.51.41
+  smartx-microbox-monash-1=203.80.21.39
+  smartx-microbox-ptit-1=112.137.141.17
+  smartx-microbox-drukren-1=103.133.216.15

@@ -1,0 +1,19 @@
+#!/bin/bash
+key="fn!xo!ska!"
+sudo sshpass -p $key ssh-copy-id -o StrictHostKeyChecking=no tein@103.22.221.85
+sudo sshpass -p $key ssh-copy-id -o StrictHostKeyChecking=no tein@103.22.221.83
+sudo sshpass -p $key ssh-copy-id -o StrictHostKeyChecking=no tein@203.80.21.11
+sudo sshpass -p $key ssh-copy-id -o StrictHostKeyChecking=no tein@203.80.21.12
+sudo sshpass -p $key ssh-copy-id -o StrictHostKeyChecking=no tein@161.200.90.118
+sudo sshpass -p $key ssh-copy-id -o StrictHostKeyChecking=no tein@203.176.131.65
+sudo sshpass -p $key ssh-copy-id -o StrictHostKeyChecking=no tein@220.158.236.43
+sudo sshpass -p $key ssh-copy-id -o StrictHostKeyChecking=no tein@112.137.141.13
+sudo sshpass -p $key ssh-copy-id -o StrictHostKeyChecking=no tein@103.137.86.2
+sudo sshpass -p $key ssh-copy-id -o StrictHostKeyChecking=no tein@103.47.184.186
+sudo sshpass -p $key ssh-copy-id -o StrictHostKeyChecking=no tein@103.133.216.15
+sudo sshpass -p $key ssh-copy-id -o StrictHostKeyChecking=no tein@167.205.51.41
+sudo sshpass -p $key ssh-copy-id -o StrictHostKeyChecking=no tein@203.80.21.39
+sudo sshpass -p $key ssh-copy-id -o StrictHostKeyChecking=no tein@112.137.141.17
+sudo sshpass -p $key ssh-copy-id -o StrictHostKeyChecking=no tein@112.137.141.12
+sudo sshpass -p $key ssh-copy-id -o StrictHostKeyChecking=no tein@203.80.21.39
+sudo sshpass -p $key ssh-copy-id -o StrictHostKeyChecking=no tein@180.131.148.98
