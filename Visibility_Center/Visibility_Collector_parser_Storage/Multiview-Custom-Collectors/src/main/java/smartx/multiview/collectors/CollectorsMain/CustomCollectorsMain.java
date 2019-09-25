@@ -5,32 +5,19 @@
 
 package smartx.multiview.collectors.CollectorsMain;
 
-import java.util.Timer;
-import java.util.concurrent.TimeUnit;
-
-import smartx.multiview.collectors.flow.*;
-import smartx.multiview.collectors.resource.*;
+import smartx.multiview.DataLake.Elasticsearch_Connector;
+import smartx.multiview.DataLake.MongoDB_Connector;
 import smartx.multiview.collectors.microbox.IOVisor_Data_DailyreportConsumer;
 import smartx.multiview.collectors.microbox.JsonWrite;
-import smartx.multiview.collectors.microbox.SNAP_Data_DailyreportConsumer;
-import smartx.multiview.collectors.microbox.agentBoxAppStatus_DailyreportConsumer;
-import smartx.multiview.collectors.microbox.agentCenterAppStatus_DailyreportConsumer;
-import smartx.multiview.collectors.microbox.agentStatus_DailyreportConsumer;
-//import smartx.multiview.collectors.microbox.Snap_influxdb;
 import smartx.multiview.collectors.microbox.collectd_DailyreportConsumer;
 //import smartx.multiview.collectors.microbox.collectd_DailyreportConsumer2;
 //import smartx.multiview.collectors.microbox.collectd_DailyreportConsumer3;
 import smartx.multiview.collectors.microbox.jsonRead;
 import smartx.multiview.collectors.microbox.latency_DailyreportConsumer;
-//import smartx.multiview.collectors.microbox.latency_DailyreportConsumer_extended_sites;
-import smartx.multiview.collectors.microbox.ping_DailyreportConsumer;
-//import smartx.multiview.collectors.topology.ping_latency_DailyreportConsumer;
-import smartx.multiview.collectors.microbox.tcpDailyreportConsumer;
-
-import smartx.multiview.collectors.microbox.udpDailyreportConsumer;
-
 import smartx.multiview.collectors.microbox.vcenter_DailyreportConsumer1;
-import smartx.multiview.DataLake.*;
+import smartx.multiview.collectors.microbox.ping_DailyreportConsumer;
+import smartx.multiview.collectors.microbox.tcpDailyreportConsumer;
+import smartx.multiview.collectors.microbox.udpDailyreportConsumer;
 
 public class CustomCollectorsMain 
 {
@@ -154,10 +141,10 @@ public class CustomCollectorsMain
 		
 		
 		///////////////////////////////////////Collectd////////////////////////////////////////////////////////////////////////////////
-		/*
+		
 		collectd_DailyreportConsumer collect_Data_Dailyreport1 = new collectd_DailyreportConsumer("103.22.221.56:9092",MongoConnector, ESConnector);
 		collect_Data_Dailyreport1.start();
-			*/
+			
 		
 		//Agent monitoring
 		
