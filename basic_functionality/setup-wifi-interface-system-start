@@ -1,0 +1,10 @@
+#!/bin/bash
+
+interface=`ip add | grep wlx | cut -f 2 -d: | xargs`
+echo -e $interface
+sudo iw dev $interface set 4addr on && sudo ifconfig $interface up && sudo brctl addif br-MAC2 $interface
+
+sudo ifconfig br-MAC2 192.168.151.225/27 
+sleep 2
+hostapd -B /home/tein/hostapd.conf
+systemctl restart dnsmasq.service

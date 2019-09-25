@@ -1,0 +1,8 @@
+#@reboot root /bin/bash /opt/setup-wifi-interface-system-start.sh
+@reboot nohup /opt/MultiView-Dependencies/multi-view-flowcentric-integration.sh &>/dev/null &
+@reboot /usr/bin/screen -dmS box_agent sudo python /opt/agent/multi_function.py > /opt/agent/box_agent.log 2>&1
+*/5 * * * * /bin/bash /opt/FlowAgent/transfer_iovisor_data.sh >> /opt/FlowAgent/transfer_iovisor_data.log1 2>&1
+0 2 * * * /bin/bash /opt/measurement/bandwidth-check_2.sh
+#*/720 * * * * /bin/bash /opt/measurement/bandwidth-check_2.sh
+*/10 * * * * /bin/bash /opt/measurement/ping_latency.sh
+
