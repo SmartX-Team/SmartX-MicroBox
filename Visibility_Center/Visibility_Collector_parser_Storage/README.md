@@ -1,0 +1,2 @@
+Path for Micro-Box development
+C:\Users\Ahmad\GitHub\SmartX-MicroBox\Visibility_Center\Visibility_Collector_parser_Storage\Multiview-Custom-Collectors\src\main\java\smartx\multiview\collectors\microbox
