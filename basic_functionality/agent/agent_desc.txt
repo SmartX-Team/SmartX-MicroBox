@@ -1,0 +1,1 @@
+gent monitors the running services, start the stopped services and update the malfunctioning services to the center Agent at P+O Center
