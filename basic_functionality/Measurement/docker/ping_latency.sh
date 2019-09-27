@@ -30,12 +30,12 @@
 
 #import datetime
 #load micro-box configuration YAML file.
-#	with open("micro-box-config.yaml", 'r') as stream:
+#	with open("/tmp/SmartX-MicroBox/basic_functionality/Measurement/docker/micro-box-config.yaml", 'r') as stream:
 #	data_loaded = yaml.load(stream)
 
 
 #VCenter
-	my_list=`cat  micro-box-config.yaml`
+	my_list=`cat  /tmp/SmartX-MicroBox/basic_functionality/Measurement/docker/micro-box-config.yaml`
 for item in $my_list;
 do
   if [[ $item == *"VCENTER"* ]]; then
@@ -59,7 +59,7 @@ BOX_HOSTNAME=${BOX_HOSTNAME:7}
 
 ping_grid=""
 
-	my_list=`cat  micro-box-config.yaml`
+	my_list=`cat  /tmp/SmartX-MicroBox/basic_functionality/Measurement/docker/micro-box-config.yaml`
 
 echo "**********************************************************************"
 echo "**********************************************************************"
@@ -167,7 +167,7 @@ function micro_box_ping_latency {
 	  echo -e $ping
           echo -e $latency
           echo -e "\n\n--------------------------------------------------------------------------------------------------------------\n\n"
-        done < <(cat  micro-box-config.yaml )
+        done < <(cat  /tmp/SmartX-MicroBox/basic_functionality/Measurement/docker/micro-box-config.yaml )
 
         echo -e $ping
         echo -e $latency
