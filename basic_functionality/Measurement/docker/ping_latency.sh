@@ -173,7 +173,7 @@ function micro_box_ping_latency {
         echo -e $latency
         echo "END of LOOP SEND Daily Ping report"
         echo "smartx-microbox_ping_latency" "$FROM_BOX_SITE" "$ping_grid" "$latency_grid" "$vcenter_check"
-	python /tmp/SmartX-MicroBox/basic_functionality/Measurement/docker/daily_report.py "smartx-microbox_ping_latency" "$BOX_HOSTNAME" "$ping_grid" "$latency_grid" "$vcenter_check"
+	exec python /tmp/SmartX-MicroBox/basic_functionality/Measurement/docker/daily_report.py "smartx-microbox_ping_latency" "$BOX_HOSTNAME" "$ping_grid" "$latency_grid" "$vcenter_check"
 }
 
 echo -e "\n"
